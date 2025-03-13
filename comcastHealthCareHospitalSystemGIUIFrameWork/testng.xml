@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+<parameter name="browser" value="chrome"></parameter>
+<parameter name="url" value="http://49.249.28.218:8081/AppServer/Health_Care_Hospital_System/"></parameter>
+<parameter name="username" value="basicadmin"></parameter>
+<parameter name="password" value="123"></parameter>
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="com.camcast.HMS.patient.PatientBatchTestNew"/>
+      <class name="com.comcast.HMS.admittedpatientinfo.AdmittedPatientBatchTestNew"/>
+      <class name="com.comcast.HMS.room.RoomBatchTestNew"/>
+      <class name="com.comcast.HMS.staff.CreateStaffAndVerifyTestNew"/>
+      <class name="com.comcast.HMS.invoice.InvoicePatientBatchTestNew"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
