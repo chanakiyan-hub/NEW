@@ -3,14 +3,14 @@
 <suite name="Suite">
 	<test thread-count="5" name="Test">
 		<classes>
-			<class name="com.comcast.HMS.room.RoomBatchTestNew">
+			<class name="com.comcast.HMS.room.RoomBatchTest">
 				<methods>
-					<include name="updateRoomInfoTestNew"></include>
+					<include name="updateRoomInfoTest"></include>
 				</methods>
 			</class>
 			<class name="com.comcast.HMS.admittedpatientinfo">
 				<methods>
-					<include name="dischargePatientTestNew"></include>
+					<include name="dischargePatientTest"></include>
 				</methods>
 			</class>
 		</classes>

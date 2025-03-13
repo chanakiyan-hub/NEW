@@ -3,17 +3,17 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.comcast.HMS.room.RoomBatchTestNew">
+      <class name="com.camcast.HMS.patient.PatientBatchTest">
         <methods>
-          <include name="roomInfoForPatientTestNew"/>
-          <include name="configAC"/>
+          <include name="patientOPDdocDetailsTest"/>
           <include name="configAS"/>
+          <include name="configAC"/>
           <include name="configBM"/>
           <include name="configAM"/>
-          <include name="configBC"/>
           <include name="configBS"/>
+          <include name="configBC"/>
         </methods>
-      </class> <!-- com.comcast.HMS.room.RoomBatchTestNew -->
+      </class> <!-- com.camcast.HMS.patient.PatientBatchTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

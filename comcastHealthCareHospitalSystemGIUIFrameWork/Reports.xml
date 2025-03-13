@@ -6,9 +6,9 @@
 	</listeners>
   <test thread-count="5" name="Test">
     <classes>
-      <class name="com.comcast.HMS.staff.CreateStaffAndVerifyTestNew">
+      <class name="com.comcast.HMS.staff.CreateStaffAndVerifyTest">
       <methods>
-      <include name="createDocAndVerifyTestNew"></include>
+      <include name="createDocAndVerifyTest"></include>
       </methods>
       </class>
     </classes>

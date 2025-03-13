@@ -14,10 +14,10 @@ import comcastHMSobjectRepository.RoomInfo;
 import comcastHMSobjectRepository.UpdateRoomForm;
 import om.comcast.HMS.generic.webdriverUtility.UtilityClassObject;
 @Listeners(com.comcast.HMS.generic.listenerUtility.LisImpClass.class)
-public class RoomBatchTestNew extends BaseClass {
+public class RoomBatchTest extends BaseClass {
 
 	@Test (groups = "System")
-	public void updateRoomInfoTestNew() throws IOException {
+	public void updateRoomInfoTest() throws IOException {
 
 		Homepage hp = new Homepage(driver);
 		hp.getRoomInformationLNK().click();
@@ -38,7 +38,7 @@ public class RoomBatchTestNew extends BaseClass {
 	}
 
 	@Test (groups = "Smoke")
-	public void roomInfoForPatientTestNew() throws IOException {
+	public void roomInfoForPatientTest() throws IOException {
 
 		Homepage hp = new Homepage(driver);
 		hp.getRoomInformationLNK().click();

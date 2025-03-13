@@ -13,10 +13,10 @@ import comcastHMSobjectRepository.Homepage;
 import comcastHMSobjectRepository.PatientAdmittedInvoiceDis;
 import om.comcast.HMS.generic.webdriverUtility.UtilityClassObject;
 @Listeners(com.comcast.HMS.generic.listenerUtility.LisImpClass.class)
-public class AdmittedPatientBatchTestNew extends BaseClass{
+public class AdmittedPatientBatchTest extends BaseClass{
 
 	@Test (groups = "System")
-	public void dischargePatientTestNew() throws IOException {
+	public void dischargePatientTest() throws IOException {
 		UtilityClassObject.getTest().log(Status.INFO, "Navigate To AllADmitted Patient Information");
 		Homepage hp = new Homepage(driver);
 		hp.getAdmitedPatientInformationLNK().click();

@@ -3,16 +3,16 @@
 <suite thread-count="2" parallel="tests" name="Suite">
 	<test name="Test-1">
 		<classes>
-			<class name="com.camcast.HMS.patient.PatientBatchTestNew" />
-			<class name="com.comcast.HMS.staff.CreateStaffAndVerifyTestNew" />
-			<class name="com.comcast.HMS.invoice.InvoicePatientBatchTestNew" />
+			<class name="com.camcast.HMS.patient.PatientBatchTest" />
+			<class name="com.comcast.HMS.staff.CreateStaffAndVerifyTest" />
+			<class name="com.comcast.HMS.invoice.InvoicePatientBatchTest" />
 		</classes>
 	</test>
 	<test name="Test-1">
 		<classes>
 			<class
-				name="com.comcast.HMS.admittedpatientinfo.AdmittedPatientBatchTestNew" />
-			<class name="com.comcast.HMS.room.RoomBatchTestNew" />
+				name="com.comcast.HMS.admittedpatientinfo.AdmittedPatientBatchTest" />
+			<class name="com.comcast.HMS.room.RoomBatchTest" />
 		</classes>
 
 	</test> <!--

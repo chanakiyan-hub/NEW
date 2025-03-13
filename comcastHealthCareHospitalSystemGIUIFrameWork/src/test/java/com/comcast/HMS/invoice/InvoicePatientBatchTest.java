@@ -16,10 +16,10 @@ import comcastHMSobjectRepository.PatientInformation;
 import comcastHMSobjectRepository.PatientInvoices;
 import om.comcast.HMS.generic.webdriverUtility.UtilityClassObject;
 @Listeners(com.comcast.HMS.generic.listenerUtility.LisImpClass.class)
-public class InvoicePatientBatchTestNew extends BaseClass{
+public class InvoicePatientBatchTest extends BaseClass{
 
 	@Test (groups = "Integration")
-	public void patientOPDInvoMakeTestNew() throws IOException {
+	public void patientOPDInvoMakeTest() throws IOException {
 		UtilityClassObject.getTest().log(Status.INFO, "Navigate To Patient Info");
 		Homepage hp = new Homepage(driver);
 		hp.getPatientInfoLNK().click();
@@ -42,7 +42,7 @@ public class InvoicePatientBatchTestNew extends BaseClass{
 	}
 	
 	@Test (groups = "Smoke")
-	public void allADmitPatientInvoTestNew() throws IOException {
+	public void allADmitPatientInvoTest() throws IOException {
 		
 		Homepage hp = new Homepage(driver);
 		hp.getPatientInvoicesLNK().click();

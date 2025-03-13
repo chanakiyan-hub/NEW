@@ -37,22 +37,25 @@ public class BaseClass {
 	public WebdriverUtility wLib1 = new WebdriverUtility();
 	
 	
-	@BeforeSuite //(alwaysRun = true )
+	@BeforeSuite (groups = {"Smoke" , "Integration" , "System"})
 	public void configBS() throws SQLException {
 		System.out.println("====Connect to DB , Report Config====");
 		dblib1.getDbconnection();
 		
 	}
 	
+
+	
+	
 	@Parameters ("BROWSER") //this is using only suite file execution time not for other time
-	@BeforeClass (alwaysRun=true)
+	@BeforeClass (alwaysRun=true , groups = {"Smoke" , "Integration" , "System"})
 	public void configBC(@Optional ("BROWSER") String browser) throws IOException {
 		System.out.println("===Launch The BROWSER===");
 		
 		String BROWSER = browser;
 		BROWSER = flib1.gatDataFromPropertiesFile("browser");
 		//CMD LINE
-		//String BROWSER =System.getProperty("browser" , flib1.gatDataFromPropertiesFile("browser"));
+		//String BROWSER =System.getProperty("browser" , flib.gatDataFromPropertiesFile("browser"));
 		if (BROWSER.equals("chrome")) {
 			driver = new ChromeDriver();
 		} else if (BROWSER.equals("edge")) {
@@ -64,7 +67,14 @@ public class BaseClass {
 		sdriver = driver;
 		UtilityClassObject.setDriver(driver);
 	}
-
+	
+	
+	
+	
+	
+	
+	
+	
     /*@Parameters ("BROWSER") //this is using only suite file execution time not for other time
 	@BeforeClass (groups = {"smokeTest" , "regressionTest"})
 	public void configBC(@Optional ("BROWSER") String browser) throws IOException {
@@ -82,7 +92,7 @@ public class BaseClass {
 		sdriver = driver;
 	}*/
 	
-	@BeforeMethod //(alwaysRun = true )
+	@BeforeMethod (groups = {"Smoke" , "Integration" , "System"})
 	public void configBM() throws IOException {
 		System.out.println("==Login==");
 		String URL = flib1.gatDataFromPropertiesFile("url");
@@ -99,7 +109,7 @@ public class BaseClass {
 		
 	}
 	
-	@AfterMethod //(alwaysRun = true )
+	@AfterMethod (groups = {"Smoke" , "Integration" , "System"})
 	public void configAM() {
 		System.out.println("==Logout==");
 		Homepage hp = new Homepage(driver);
@@ -107,14 +117,14 @@ public class BaseClass {
 		
 	}
 	
-	@AfterClass //(alwaysRun = true )
+	@AfterClass (groups = {"Smoke" , "Integration" , "System"})
 	public void configAC() {
 		System.out.println("===Close The BROWSER===");
 		driver.quit();
 		
 	}
 	
-	@AfterSuite //(alwaysRun = true )
+	@AfterSuite (groups = {"Smoke" , "Integration" , "System"})
 	public void configAS() {
 		System.out.println("====Close To DB , Report Backup====");
 		dblib1.closeDbconnection();

@@ -4,14 +4,14 @@
   <test name="TestRunner-Chrome">
   <parameter name="BROWSER" value="chrome"></parameter>
     <classes>
-      <class name="com.camcast.HMS.patient.PatientBatchTestNew"/>
+      <class name="com.camcast.HMS.patient.PatientBatchTest"/>
      
     </classes>
   </test> <!-- Test -->
    <test name="TestRunner-Edge">
   <parameter name="BROWSER" value="edge"></parameter>
     <classes>
-      <class name="com.camcast.HMS.patient.PatientBatchTestNew"/>
+      <class name="com.camcast.HMS.patient.PatientBatchTest"/>
      
     </classes>
   </test> <!-- Test -->

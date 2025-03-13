@@ -19,7 +19,7 @@ import om.comcast.HMS.generic.webdriverUtility.UtilityClassObject;
 public class CreateStaffAndVerifyTestNew extends BaseClass{
 
 	@Test (groups = "System")
-	public void createDocAndVerifyTestNew() throws IOException, InterruptedException {
+	public void createDocAndVerifyTest() throws IOException, InterruptedException {
 		UtilityClassObject.getTest().log(Status.INFO, "Read The Data From Excel");
 		final String eml = ""; 
 		String first = elib1.getDataFromExcel("HMS", 2, 1); 
@@ -61,7 +61,7 @@ public class CreateStaffAndVerifyTestNew extends BaseClass{
 	}
 
 	@Test (groups = "Integration")
-	public void staffActiveMemberTestNew() throws IOException {
+	public void staffActiveMemberTest() throws IOException {
 		Homepage hp = new Homepage(driver);
 		hp.getStaffInfoLNK().click();
 		UtilityClassObject.getTest().log(Status.INFO, "Navigate To Staff Info");
