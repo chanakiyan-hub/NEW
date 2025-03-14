@@ -8,11 +8,36 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="8">Default suite</th></tr>
-<tr><td><a href="#t0">Default test</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">4,897</td><td></td><td></td></tr>
+<tr><th colspan="8">Suite</th></tr>
+<tr><td><a href="#t0">Test Runner - Chrome</a></td><td class="num">3</td><td class="num">0</td><td class="num">0</td><td class="num attn">2</td><td class="num">25,345</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.camcast.HMS.patient.PatientBatchTest</td><td><a href="#m0">patientInfoCheckTest</a></td><td rowspan="1">1741870646477</td><td rowspan="1">656</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test Runner - Chrome &#8212; failed</th></tr><tr class="failedeven"><td rowspan="2">com.camcast.HMS.patient.PatientBatchTest</td><td><a href="#m0">createPatientAndAdmittTest</a></td><td rowspan="1">1741953246019</td><td rowspan="1">7628</td></tr><tr class="failedeven"><td><a href="#m1">patientOPDdocDetailsTest</a></td><td rowspan="1">1741953255530</td><td rowspan="1">2009</td></tr><tr><th colspan="4">Test Runner - Chrome &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.camcast.HMS.patient.PatientBatchTest</td><td><a href="#m2">patientInfoCheckTest</a></td><td rowspan="1">1741953254480</td><td rowspan="1">810</td></tr><tr class="passedodd"><td rowspan="2">com.comcast.HMS.staff.CreateStaffAndVerifyTestNew</td><td><a href="#m3">createDocAndVerifyTest</a></td><td rowspan="1">1741953260646</td><td rowspan="1">5038</td></tr><tr class="passedodd"><td><a href="#m4">staffActiveMemberTest</a></td><td rowspan="1">1741953265913</td><td rowspan="1">1867</td></tr></tbody>
 </table>
-<h2>Default test</h2><h3 id="m0">com.camcast.HMS.patient.PatientBatchTest#patientInfoCheckTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Test Runner - Chrome</h2><h3 id="m0">com.camcast.HMS.patient.PatientBatchTest#createPatientAndAdmittTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: Cannot locate option with index: 4
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.29.0&apos;, revision: &apos;5fc1ec94cb&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;22.0.1&apos;
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.Select.setSelectedByIndex(Select.java:407)
+	at org.openqa.selenium.support.ui.Select.selectByIndex(Select.java:262)
+	at comcastHMSobjectRepository.PatientAdmitREGForm.Romno(PatientAdmitREGForm.java:60)
+	at com.camcast.HMS.patient.PatientBatchTest.createPatientAndAdmittTest(PatientBatchTest.java:72)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1570)
+... Removed 16 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.camcast.HMS.patient.PatientBatchTest#patientOPDdocDetailsTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [http://49.249.28.218:8081/AppServer/Health_Care_Hospital_System/admitdf.php?id=%2021] but found [http://49.249.28.218:8081/AppServer/Health_Care_Hospital_System/admitdf.php?id=%209]
+	at com.camcast.HMS.patient.PatientBatchTest.patientOPDdocDetailsTest(PatientBatchTest.java:107)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1570)
+... Removed 22 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">com.camcast.HMS.patient.PatientBatchTest#patientInfoCheckTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">com.comcast.HMS.staff.CreateStaffAndVerifyTestNew#createDocAndVerifyTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">com.comcast.HMS.staff.CreateStaffAndVerifyTestNew#staffActiveMemberTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

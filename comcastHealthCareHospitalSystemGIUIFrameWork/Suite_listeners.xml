@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Suite">
+<listeners>
+<listener class-name="com.comcast.HMS.generic.listenerUtility.LisImpClass"></listener>
+
+</listeners>
   <test thread-count="5" name="Test">
     <classes>
       <class name="com.camcast.HMS.patient.PatientBatchTest"/>
-      <class name="com.comcast.HMS.admittedpatientinfo.AdmittedPatientBatchTest"/>
-      <class name="com.comcast.HMS.room.RoomBatchTest"/>
-      <class name="com.comcast.HMS.staff.CreateStaffAndVerifyTest"/>
-      <class name="com.comcast.HMS.invoice.InvoicePatientBatchTest"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

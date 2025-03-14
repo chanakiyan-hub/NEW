@@ -37,6 +37,8 @@ public class BaseClass {
 	public WebdriverUtility wLib1 = new WebdriverUtility();
 	
 	
+
+	
 	@BeforeSuite (groups = {"Smoke" , "Integration" , "System"})
 	public void configBS() throws SQLException {
 		System.out.println("====Connect to DB , Report Config====");
@@ -48,7 +50,7 @@ public class BaseClass {
 	
 	
 	@Parameters ("BROWSER") //this is using only suite file execution time not for other time
-	@BeforeClass (alwaysRun=true , groups = {"Smoke" , "Integration" , "System"})
+	@BeforeClass (groups = {"Smoke" , "Integration" , "System"})
 	public void configBC(@Optional ("BROWSER") String browser) throws IOException {
 		System.out.println("===Launch The BROWSER===");
 		
@@ -67,13 +69,7 @@ public class BaseClass {
 		sdriver = driver;
 		UtilityClassObject.setDriver(driver);
 	}
-	
-	
-	
-	
-	
-	
-	
+
 	
     /*@Parameters ("BROWSER") //this is using only suite file execution time not for other time
 	@BeforeClass (groups = {"smokeTest" , "regressionTest"})

@@ -6,15 +6,13 @@
 			<include name="System"></include>
 		</run>
 	</groups>
-	
   <test thread-count="5" name="Test">
-  
     <classes>
       <class name="com.camcast.HMS.patient.PatientBatchTest"/>
       <class name="com.comcast.HMS.admittedpatientinfo.AdmittedPatientBatchTest"/>
       <class name="com.comcast.HMS.room.RoomBatchTest"/>
-      <class name="com.comcast.HMS.staff.CreateStaffAndVerifyTest"/>
       <class name="com.comcast.HMS.invoice.InvoicePatientBatchTest"/>
+      <class name="com.comcast.HMS.staff.CreateStaffAndVerifyTestNew"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
